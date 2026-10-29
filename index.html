@@ -370,6 +370,81 @@ fresur<!DOCTYPE html>
             color: #2c2c2c;
             margin-bottom: 10px;
         }
+     /* Responsiv design för mobiler och surfplattor */
+        @media screen and (max-width: 768px) {
+            .header {
+                padding: 30px 15px;
+            }
+            
+            .header h1 {
+                font-size: 1.5em;
+            }
+            
+            .header p {
+                font-size: 0.95em;
+            }
+            
+            /* Dölj loggan på små skärmar för att undvika overlap */
+            .header img {
+                display: none;
+            }
+            
+            .container {
+                padding: 15px;
+            }
+            
+            .key-points {
+                grid-template-columns: 1fr;
+            }
+            
+            .dos-donts {
+                grid-template-columns: 1fr;
+            }
+            
+            .progress-steps {
+                flex-direction: column;
+            }
+            
+            .step {
+                min-width: 100%;
+            }
+            
+            .welcome-box, .content-section, .checklist {
+                padding: 20px;
+            }
+            
+            .accordion-content-inner {
+                padding: 15px;
+            }
+            
+            .cta-section {
+                padding: 30px 20px;
+            }
+            
+            .button {
+                display: block;
+                margin: 10px 0;
+            }
+        }
+        
+        /* Extra små skärmar (smartphones i porträtt) */
+        @media screen and (max-width: 480px) {
+            .header h1 {
+                font-size: 1.3em;
+            }
+            
+            .header p {
+                font-size: 0.9em;
+            }
+            
+            .content-section h2 {
+                font-size: 1.3em;
+            }
+            
+            .key-point h3 {
+                font-size: 1em;
+            }
+        }
     </style>
 </head>
 <body>
